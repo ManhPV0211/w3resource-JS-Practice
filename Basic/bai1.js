@@ -3,3 +3,11 @@
 Sample Output : Today is : Tuesday.
 Current time is : 10 PM : 30 : 38
 */
+function displayCurrentDay() {
+    const refDay = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+    const today = new Date();
+    return `Today is: ${refDay[today.getDay()]}. Current time is: ${today.getHours()} : ${today.getMinutes()} : ${today.getSeconds()}
+    `
+};
+
+console.log(displayCurrentDay());
